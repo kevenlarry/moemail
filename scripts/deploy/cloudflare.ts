@@ -1,4 +1,3 @@
-console.log("Token prefix:", CF_API_TOKEN?.substring(0, 10));
 import Cloudflare from "cloudflare";
 import "dotenv/config";
 
@@ -9,7 +8,7 @@ const PROJECT_NAME = process.env.PROJECT_NAME || "moemail";
 const DATABASE_NAME = process.env.DATABASE_NAME || "moemail-db";
 const KV_NAMESPACE_NAME = process.env.KV_NAMESPACE_NAME || "moemail-kv";
 const DATABASE_ID = process.env.DATABASE_ID;
-
+console.log("Token prefix:", CF_API_TOKEN?.substring(0, 10));
 const client = new Cloudflare({
   apiToken: CF_API_TOKEN,
 });
