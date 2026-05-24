@@ -1,3 +1,4 @@
+console.log("Token prefix:", CF_API_TOKEN?.substring(0, 10));
 import Cloudflare from "cloudflare";
 import "dotenv/config";
 
